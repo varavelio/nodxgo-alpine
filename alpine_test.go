@@ -3,8 +3,8 @@ package alpine_test
 import (
 	"fmt"
 
-	nodx "github.com/nodxdev/nodxgo"
-	alpine "github.com/nodxdev/nodxgo-alpine"
+	nodx "github.com/varavelio/nodxgo"
+	alpine "github.com/varavelio/nodxgo-alpine"
 )
 
 func ExampleTemplate() {

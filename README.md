@@ -1,27 +1,28 @@
 # nodxgo-alpine
 
-<a href="https://pkg.go.dev/github.com/nodxdev/nodxgo-alpine">
-  <img src="https://pkg.go.dev/badge/github.com/nodxdev/nodxgo-alpine" alt="Go Reference"/>
+<a href="https://pkg.go.dev/github.com/varavelio/nodxgo-alpine">
+  <img src="https://pkg.go.dev/badge/github.com/varavelio/nodxgo-alpine" alt="Go Reference"/>
 </a>
-<a href="https://goreportcard.com/report/nodxdev/nodxgo-alpine">
-  <img src="https://goreportcard.com/badge/nodxdev/nodxgo-alpine" alt="Go Report Card"/>
+<a href="https://goreportcard.com/report/varavelio/nodxgo-alpine">
+  <img src="https://goreportcard.com/badge/varavelio/nodxgo-alpine" alt="Go Report Card"/>
 </a>
-<a href="https://github.com/nodxdev/nodxgo-alpine/releases/latest">
-  <img src="https://img.shields.io/github/release/nodxdev/nodxgo-alpine.svg" alt="Release Version"/>
+<a href="https://github.com/varavelio/nodxgo-alpine/releases/latest">
+  <img src="https://img.shields.io/github/release/varavelio/nodxgo-alpine.svg" alt="Release Version"/>
 </a>
 <a href="LICENSE">
-  <img src="https://img.shields.io/github/license/nodxdev/nodxgo-alpine.svg" alt="License"/>
+  <img src="https://img.shields.io/github/license/varavelio/nodxgo-alpine.svg" alt="License"/>
 </a>
-<a href="https://github.com/nodxdev/nodxgo-alpine">
-  <img src="https://img.shields.io/github/stars/nodxdev/nodxgo-alpine?style=flat&label=github+stars"/>
+<a href="https://github.com/varavelio/nodxgo-alpine">
+  <img src="https://img.shields.io/github/stars/varavelio/nodxgo-alpine?style=flat&label=github+stars"/>
 </a>
 
 ---
 
 nodxgo-alpine provides a Go-based integration for
 [Alpine.js](https://alpinejs.dev) within the
-[NodX Go](https://github.com/nodxdev/nodxgo) template engine. It simplifies the
-generation of dynamic HTML elements and attributes using Alpine.js directives.
+[NodX Go](https://github.com/varavelio/nodxgo) template engine. It simplifies
+the generation of dynamic HTML elements and attributes using Alpine.js
+directives.
 
 ## Installation
 
@@ -29,7 +30,7 @@ To install the package, run:
 
 ```sh
 # Go 1.22 or later is required
-go get github.com/nodxdev/nodxgo-alpine
+go get github.com/varavelio/nodxgo-alpine
 ```
 
 ## Usage
@@ -74,8 +75,8 @@ package main
 
 import (
 	"fmt"
-	nodx "github.com/nodxdev/nodxgo"
-	alpine "github.com/nodxdev/nodxgo-alpine"
+	nodx "github.com/varavelio/nodxgo"
+	alpine "github.com/varavelio/nodxgo-alpine"
 )
 
 func main() {
@@ -89,7 +90,9 @@ func main() {
 **Output:**
 
 ```html
-<template><div>Hello, World!</div></template>
+<template>
+	<div>Hello, World!</div>
+</template>
 ```
 
 ## License
@@ -104,4 +107,4 @@ improve the project.
 ---
 
 For more details, check out the [Alpine.js documentation](https://alpinejs.dev)
-and [NodX Go](https://github.com/nodxdev/nodxgo).
+and [NodX Go](https://github.com/varavelio/nodxgo).

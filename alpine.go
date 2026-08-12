@@ -1,10 +1,10 @@
 // Package alpine provides Alpine.js integration for NodX Go
 //
 //   - https://alpinejs.dev
-//   - https://github.com/nodxdev/nodxgo
+//   - https://github.com/varavelio/nodxgo
 package alpine
 
-import nodx "github.com/nodxdev/nodxgo"
+import nodx "github.com/varavelio/nodxgo"
 
 // Template is a generic function for rendering a <template> element.
 //

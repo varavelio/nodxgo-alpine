@@ -76,6 +76,32 @@ fmt.Println(node)
 <button x-bind:disabled="isDisabled">Click Me</button>
 ```
 
+## Available Functions
+
+The following functions are exported by the `alpine` package:
+
+| Function               | Alpine.js docs                                             |
+| ---------------------- | ---------------------------------------------------------- |
+| `X(key, value...)`     | -                                                          |
+| `XData(value)`         | [x-data](https://alpinejs.dev/directives/data)             |
+| `XInit(value)`         | [x-init](https://alpinejs.dev/directives/init)             |
+| `XShow(value)`         | [x-show](https://alpinejs.dev/directives/show)             |
+| `XBind(target, value)` | [x-bind](https://alpinejs.dev/directives/bind)             |
+| `XOn(event, value)`    | [x-on](https://alpinejs.dev/directives/on)                 |
+| `XText(value)`         | [x-text](https://alpinejs.dev/directives/text)             |
+| `XHTML(value)`         | [x-html](https://alpinejs.dev/directives/html)             |
+| `XModel(value)`        | [x-model](https://alpinejs.dev/directives/model)           |
+| `XModelable(value)`    | [x-modelable](https://alpinejs.dev/directives/modelable)   |
+| `XFor(value)`          | [x-for](https://alpinejs.dev/directives/for)               |
+| `XTransition()`        | [x-transition](https://alpinejs.dev/directives/transition) |
+| `XEffect(value)`       | [x-effect](https://alpinejs.dev/directives/effect)         |
+| `XIgnore()`            | [x-ignore](https://alpinejs.dev/directives/ignore)         |
+| `XRef(value)`          | [x-ref](https://alpinejs.dev/directives/ref)               |
+| `XCloak()`             | [x-cloak](https://alpinejs.dev/directives/cloak)           |
+| `XTeleport(value)`     | [x-teleport](https://alpinejs.dev/directives/teleport)     |
+| `XIf(value)`           | [x-if](https://alpinejs.dev/directives/if)                 |
+| `XId(value)`           | [x-id](https://alpinejs.dev/directives/id)                 |
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).

@@ -1,20 +1,28 @@
-# nodxgo-alpine
+<h1 align="center">Alpine.js for NodX Go</h1>
 
-<a href="https://pkg.go.dev/github.com/varavelio/nodxgo-alpine">
-  <img src="https://pkg.go.dev/badge/github.com/varavelio/nodxgo-alpine" alt="Go Reference"/>
-</a>
-<a href="https://goreportcard.com/report/varavelio/nodxgo-alpine">
-  <img src="https://goreportcard.com/badge/varavelio/nodxgo-alpine" alt="Go Report Card"/>
-</a>
-<a href="https://github.com/varavelio/nodxgo-alpine/releases/latest">
-  <img src="https://img.shields.io/github/release/varavelio/nodxgo-alpine.svg" alt="Release Version"/>
-</a>
-<a href="LICENSE">
-  <img src="https://img.shields.io/github/license/varavelio/nodxgo-alpine.svg" alt="License"/>
-</a>
-<a href="https://github.com/varavelio/nodxgo-alpine">
-  <img src="https://img.shields.io/github/stars/varavelio/nodxgo-alpine?style=flat&label=github+stars"/>
-</a>
+<p align="center">
+	<a href="https://github.com/varavelio/nodxgo-alpine/actions">
+		<img src="https://github.com/varavelio/nodxgo-alpine/actions/workflows/ci.yaml/badge.svg" alt="CI status"/>
+	</a>
+	<a href="https://pkg.go.dev/github.com/varavelio/nodxgo-alpine">
+		<img src="https://pkg.go.dev/badge/github.com/varavelio/nodxgo-alpine" alt="Go Reference"/>
+	</a>
+	<a href="https://github.com/varavelio/nodxgo-alpine/releases/latest">
+		<img src="https://img.shields.io/github/release/varavelio/nodxgo-alpine.svg" alt="Release Version"/>
+	</a>
+	<a href="LICENSE">
+		<img src="https://img.shields.io/github/license/varavelio/nodxgo-alpine.svg" alt="License"/>
+	</a>
+	<a href="https://github.com/varavelio/nodxgo-alpine">
+		<img src="https://img.shields.io/github/stars/varavelio/nodxgo-alpine?style=flat&label=github+stars"/>
+	</a>
+</p>
+
+<p align="center">
+  <a href="https://varavel.com">
+    <img src="https://cdn.jsdelivr.net/gh/varavelio/brand@1.0.0/dist/badges/project.svg" alt="A Varavel project"/>
+  </a>
+</p>
 
 ---
 
@@ -29,7 +37,7 @@ directives.
 To install the package, run:
 
 ```sh
-# Go 1.22 or later is required
+# Tested on Go 1.22 and later
 go get github.com/varavelio/nodxgo-alpine
 ```
 
@@ -66,33 +74,6 @@ fmt.Println(node)
 
 ```html
 <button x-bind:disabled="isDisabled">Click Me</button>
-```
-
-### Example: Rendering a Template
-
-```go
-package main
-
-import (
-	"fmt"
-	nodx "github.com/varavelio/nodxgo"
-	alpine "github.com/varavelio/nodxgo-alpine"
-)
-
-func main() {
-	node := alpine.Template(
-		nodx.Div(nodx.Text("Hello, World!")),
-	)
-	fmt.Println(node)
-}
-```
-
-**Output:**
-
-```html
-<template>
-	<div>Hello, World!</div>
-</template>
 ```
 
 ## License

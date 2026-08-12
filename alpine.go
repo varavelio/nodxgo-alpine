@@ -6,13 +6,6 @@ package alpine
 
 import nodx "github.com/varavelio/nodxgo"
 
-// Template is a generic function for rendering a <template> element.
-//
-// Often used with x-for and x-if directives.
-func Template(children ...nodx.Node) nodx.Node {
-	return nodx.El("template", children...)
-}
-
 // X is an attribute that renders a x-[key]="[value]" attribute.
 func X(key string, value ...string) nodx.Node {
 	return nodx.Attr("x-"+key, value...)
@@ -42,14 +35,14 @@ func XShow(value string) nodx.Node {
 // XBind is an attribute that renders a x-bind:[targetAttr]="[value]" attribute.
 //
 // https://alpinejs.dev/directives/bind
-func XBind(targetAttr string, value string) nodx.Node {
+func XBind(targetAttr, value string) nodx.Node {
 	return X("bind:"+targetAttr, value)
 }
 
 // XOn is an attribute that renders a x-on:[targetEvent]="[value]" attribute.
 //
 // https://alpinejs.dev/directives/on
-func XOn(targetEvent string, value string) nodx.Node {
+func XOn(targetEvent, value string) nodx.Node {
 	return X("on:"+targetEvent, value)
 }
 
